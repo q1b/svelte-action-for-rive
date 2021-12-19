@@ -1,0 +1,45 @@
+{
+  "name": "rive-svelte-action",
+  "version": "0.0.1",
+  "description": "A rive wrapper for take advantage of buffer",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/rive-svelte-action.umd.js",
+  "unpkg": "dist/rive-svelte-action.iife.js",
+  "jsdelivr": "dist/rive-svelte-action.iife.js",
+  "module": "./dist/rive-svelte-action.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/rive-svelte-action.es.js",
+      "require": "./dist/rive-svelte-action.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sacarvy/svelte-action-for-rive.git"
+  },
+  "keywords": [
+    "vue-petite",
+    "rive-svelte-action",
+    "transition-for-petite-vue",
+    "petite-vue"
+  ],
+  "author": "sacarvy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sacarvy/svelte-action-for-rive/issues"
+  },
+  "homepage": "https://github.com/sacarvy/svelte-action-for-rive#README",
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "rive-js": "^0.7.33"
+  }
+}

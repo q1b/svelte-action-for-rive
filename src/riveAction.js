@@ -2,12 +2,12 @@
 
 import { Rive } from 'rive-js';
 
-interface Params {
-	filePath?: string;
-	buffer: Blob;
-	artboard: string;
-	stateMachines: string;
-}
+// interface Params {
+// 	filePath?: string;
+// 	buffer: Blob;
+// 	artboard: string;
+// 	stateMachines: string;
+// }
 
 // async function getBuffer(filePath = '/animations/main.riv'): Promise<Blob> {
 //     const req: Request = new Request(filePath);
@@ -16,7 +16,7 @@ interface Params {
 //     return buffer;
 //   }
 
-const readRiveFile = (buffer: Blob) => {
+const readRiveFile = (buffer) => {
 	const reader = new FileReader();
 
 	return new Promise((resolve, reject) => {
@@ -33,7 +33,7 @@ const readRiveFile = (buffer: Blob) => {
 	});
 };
 
-export function rivePlayer(node: HTMLCanvasElement, params: Params): any {
+export function rivePlayer(node, params) {
 	readRiveFile(params.buffer).then((response) => {
 		const dimensions = {
 			width: 0,
@@ -43,7 +43,7 @@ export function rivePlayer(node: HTMLCanvasElement, params: Params): any {
 		const rive = new Rive({
 			canvas: node,
 			...params,
-			buffer: <ArrayBuffer>riveArrayBuffer,
+			buffer: riveArrayBuffer,
 			autoplay: false
 		});
 		function getCanvasDimensions() {

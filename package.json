@@ -1,7 +1,7 @@
 {
   "name": "rive-svelte-action",
-  "version": "0.0.1",
-  "description": "A rive wrapper for take advantage of buffer",
+  "version": "0.0.2",
+  "description": "A rive wrapper for take advantage of buffer provided by rive in svelte, using custom buffer function and using javascript .",
   "files": [
     "dist"
   ],
@@ -24,10 +24,9 @@
     "url": "git+https://github.com/sacarvy/svelte-action-for-rive.git"
   },
   "keywords": [
-    "vue-petite",
     "rive-svelte-action",
-    "transition-for-petite-vue",
-    "petite-vue"
+    "rive",
+    "rive-animation"
   ],
   "author": "sacarvy",
   "license": "MIT",
